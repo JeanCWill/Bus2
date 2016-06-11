@@ -5,6 +5,6 @@ class LinhasController < ApplicationController
    end
 
    def details
-     render json: Linha.find(params[:id]).to_json(include: :pontos)
+     render json: Linha.find(params[:id])
    end
 end
